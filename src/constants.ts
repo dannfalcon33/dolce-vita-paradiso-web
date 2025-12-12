@@ -1,7 +1,7 @@
 import type { CompanyInfo, MenuCategory, MenuItem, NavLink, Wine, LocationInfo } from './types';
 
 // Images
-import heroHome from './assets/images/hero_home_1765550275725.png';
+// heroHome import removed (unused)
 import dishBurrata from './assets/images/dish_burrata_retry_1765558545304.png';
 import dishRisotto from './assets/images/dish_highlight_1_1765550292520.png';
 import dishBranzino from './assets/images/dish_branzino_1765558397577.png';
