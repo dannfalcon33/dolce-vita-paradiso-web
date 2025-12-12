@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import PageWrapper from '../components/animated/PageWrapper';
-import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { COMPANY_INFO, POPULAR_DISHES, TEAM_MEMBERS, WINE_SELECTION, LOCATIONS } from '../constants';
@@ -8,7 +8,6 @@ import heroHome from '../assets/images/hero_home_1765550275725.png';
 
 gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
   const heroTextRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
