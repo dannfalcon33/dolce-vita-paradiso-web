@@ -97,10 +97,22 @@ src/
 
 Todas las imágenes de este proyecto fueron generadas utilizando herramientas avanzadas de IA para asegurar una estética consistente de "fotografía de comida oscura y melancólica" de alta gama.
 
-## 📝 Licencia
+## Live Demo
 
-Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](LICENSE).
+https://dolcevitaparadiso.netlify.app/
 
----
+## Sobre el Desarrollador 👨‍💻
 
-_Creado con pasión para Dolce Vita Paradiso._
+**Yoshua Soto** (Dann Falcon Dev)  
+_Fullstack Developer | Especialista en TypeScript_
+
+Creador apasionado por construir aplicaciones que no solo funcionan, sino que asombran. Utilizando la potencia de la IA (Gemini) y tecnologías web modernas, me enfoco en entregar experiencias de usuario (UX) memorables e inmersivas.
+
+📫 **Contacto**
+
+- **Email**: yoshuasoto54@gmail.com
+- **WhatsApp**: +58 0422 033 1995
+
+##
+
+![Dann Falcon Dev](banner.png)
