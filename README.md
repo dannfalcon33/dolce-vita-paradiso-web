@@ -97,10 +97,6 @@ src/
 
 Todas las imágenes de este proyecto fueron generadas utilizando herramientas avanzadas de IA para asegurar una estética consistente de "fotografía de comida oscura y melancólica" de alta gama.
 
-## Live Demo
-
-https://dolcevitaparadiso.netlify.app/
-
 ## Sobre el Desarrollador 👨‍💻
 
 **Yoshua Soto** (Dann Falcon Dev)  
