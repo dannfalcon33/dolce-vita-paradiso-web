@@ -12,6 +12,8 @@ import {
   WINE_SELECTION,
   LOCATIONS,
 } from "../constants";
+import type { MenuItem, Wine } from "../types";
+import DetailModal from "../components/DetailModal";
 import heroHome from "../assets/images/hero_home_1765550275725.png";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -39,10 +41,24 @@ const Home = () => {
 
   const [isReservationOpen, setIsReservationOpen] = useState(false);
   const [isThankYouOpen, setIsThankYouOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState<MenuItem | Wine | null>(
+    null
+  );
+  const [isDetailModalOpen, setIsDetailModalOpen] = useState(false);
 
   const handleReservationSubmit = () => {
     setIsReservationOpen(false);
     setIsThankYouOpen(true);
+  };
+
+  const handleItemClick = (item: MenuItem | Wine) => {
+    setSelectedItem(item);
+    setIsDetailModalOpen(true);
+  };
+
+  const handleReserveFromModal = () => {
+    setIsDetailModalOpen(false);
+    setIsReservationOpen(true);
   };
 
   return (
@@ -56,6 +72,12 @@ const Home = () => {
       <ThankYouModal
         isOpen={isThankYouOpen}
         onClose={() => setIsThankYouOpen(false)}
+      />
+      <DetailModal
+        isOpen={isDetailModalOpen}
+        onClose={() => setIsDetailModalOpen(false)}
+        item={selectedItem}
+        onReserve={handleReserveFromModal}
       />
 
       <PageWrapper>
@@ -156,7 +178,8 @@ const Home = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
                 viewport={{ once: true }}
-                className="flex-shrink-0 w-80 md:w-96 snap-center group"
+                className="flex-shrink-0 w-80 md:w-96 snap-center group cursor-pointer"
+                onClick={() => handleItemClick(dish)}
               >
                 <div className="h-[400px] bg-neutral-900 overflow-hidden relative mb-6">
                   {dish.image ? (
@@ -256,7 +279,8 @@ const Home = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1, duration: 0.5 }}
                   whileHover={{ scale: 1.02, x: 10 }}
-                  className="flex items-center justify-between border-b border-white/10 pb-6 group"
+                  className="flex items-center justify-between border-b border-white/10 pb-6 group cursor-pointer"
+                  onClick={() => handleItemClick(wine)}
                 >
                   <div className="flex items-center gap-6">
                     {wine.image && (
@@ -288,9 +312,15 @@ const Home = () => {
                 </motion.div>
               ))}
             </div>
-            <button className="mt-16 px-8 py-3 bg-transparent border border-paradiso-gold text-paradiso-gold hover:bg-paradiso-gold hover:text-white transition-all duration-300 uppercase tracking-widest text-xs">
-              View Full Wine List
-            </button>
+            {/* CTA */}
+            <div className="mt-12">
+              <button
+                onClick={() => setIsReservationOpen(true)}
+                className="relative z-20 px-8 py-3 bg-transparent border border-white/20 text-white font-sans uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all duration-300 cursor-pointer"
+              >
+                Reserve a Table
+              </button>
+            </div>
           </div>
         </section>
 
