@@ -1,6 +1,6 @@
 import PageWrapper from "../components/animated/PageWrapper";
 import { motion } from "framer-motion";
-import heroContact from "../assets/images/hero_contact_new.png";
+import heroContact from "../assets/images/hero_contact_new.webp";
 
 const Contact = () => {
   return (

@@ -6,19 +6,19 @@ import type { MenuItem, Wine } from "../types";
 import DetailModal from "../components/DetailModal";
 import ReservationModal from "../components/ReservationModal";
 import ThankYouModal from "../components/ThankYouModal";
-import heroImage from "../assets/images/hero_home_1765550275725.png"; // Reusing home hero as fallback
+import heroImage from "../assets/images/hero_home_1765550275725.webp"; // Reusing home hero as fallback
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState(MENU_CATEGORIES[0]);
   const [selectedItem, setSelectedItem] = useState<MenuItem | Wine | null>(
-    null
+    null,
   );
   const [isDetailModalOpen, setIsDetailModalOpen] = useState(false);
   const [isReservationOpen, setIsReservationOpen] = useState(false);
   const [isThankYouOpen, setIsThankYouOpen] = useState(false);
 
   const filteredItems = MENU_ITEMS.filter(
-    (item) => item.category === activeCategory
+    (item) => item.category === activeCategory,
   );
 
   const handleItemClick = (item: MenuItem) => {

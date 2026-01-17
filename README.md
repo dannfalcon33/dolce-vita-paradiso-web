@@ -2,7 +2,21 @@
 
 Un portafolio web inmersivo de alta gama para un restaurante italiano contemporáneo, construido con tecnologías web modernas para ofrecer una experiencia digital lujosa.
 
+# Screenshot
+
 ![Dolce Vita Paradiso Hero](./screen/screencapture-web.png)
+
+#
+
+![Dolce Vita Paradiso Hero](./screen/screencapture-menu.png)
+
+#
+
+![Dolce Vita Paradiso Hero](./screen/screencapture-out-story.png)
+
+#
+
+![Dolce Vita Paradiso Hero](./screen/screencapture-contact.png)
 
 ## 🌟 Descripción del Proyecto
 

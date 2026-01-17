@@ -9,28 +9,28 @@ import type {
 
 // Images
 // heroHome import removed (unused)
-import dishBurrata from "./assets/images/dish_burrata_retry_1765558545304.png";
-import dishRisotto from "./assets/images/dish_highlight_1_1765550292520.png";
-import dishBranzino from "./assets/images/dish_branzino_1765558397577.png";
-import dishTiramisu from "./assets/images/dish_tiramisu_1765558411570.png";
-import chefMarco from "./assets/images/chef-rossi.png";
-import chefSofia from "./assets/images/somalier.png";
-import chefAlessandro from "./assets/images/sous-chef.png";
-import wineRed1 from "./assets/images/wine_red_1_1765558472859.png";
-import wineRed2 from "./assets/images/wine_red_2_1765558487810.png";
-import wineWhite from "./assets/images/wine_white_1765558500966.png";
-import wineSparkling from "./assets/images/wine_sparkling_1765558514853.png";
-import locNY from "./assets/images/location_ny_1765558427751.png";
-import locMilan from "./assets/images/location_milan_1765558443547.png";
-import locTokyo from "./assets/images/location_tokyo_1765558458036.png";
-import carpaccioDiManzo from "./assets/images/carpaccio_di_manzo.png";
-import calamarriFritti from "./assets/images/calamari_fritti.png";
-import PappardelleCinghiale from "./assets/images/pappardelle_al_cinghiale.png";
-import LasagnaBolognese from "./assets/images/lasagna_alla_bolognese.png";
-import SpaghettiCarbonara from "./assets/images/spaghetti_carbonara.png";
-import OssoBuco from "./assets/images/osso_buco.png";
-import CanolliSiciliani from "./assets/images/cannoli_siciliani.png";
-import PannaCotta from "./assets/images/panna_cotta.png";
+import dishBurrata from "./assets/images/dish_burrata_retry_1765558545304.webp";
+import dishRisotto from "./assets/images/dish_highlight_1_1765550292520.webp";
+import dishBranzino from "./assets/images/dish_branzino_1765558397577.webp";
+import dishTiramisu from "./assets/images/dish_tiramisu_1765558411570.webp";
+import chefMarco from "./assets/images/chef-rossi.webp";
+import chefSofia from "./assets/images/somalier.webp";
+import chefAlessandro from "./assets/images/sous-chef.webp";
+import wineRed1 from "./assets/images/wine_red_1_1765558472859.webp";
+import wineRed2 from "./assets/images/wine_red_2_1765558487810.webp";
+import wineWhite from "./assets/images/wine_white_1765558500966.webp";
+import wineSparkling from "./assets/images/wine_sparkling_1765558514853.webp";
+import locNY from "./assets/images/location_ny_1765558427751.webp";
+import locMilan from "./assets/images/location_milan_1765558443547.webp";
+import locTokyo from "./assets/images/location_tokyo_1765558458036.webp";
+import carpaccioDiManzo from "./assets/images/carpaccio_di_manzo.webp";
+import calamarriFritti from "./assets/images/calamari_fritti.webp";
+import PappardelleCinghiale from "./assets/images/pappardelle_al_cinghiale.webp";
+import LasagnaBolognese from "./assets/images/lasagna_alla_bolognese.webp";
+import SpaghettiCarbonara from "./assets/images/spaghetti_carbonara.webp";
+import OssoBuco from "./assets/images/osso_buco.webp";
+import CanolliSiciliani from "./assets/images/cannoli_siciliani.webp";
+import PannaCotta from "./assets/images/panna_cotta.webp";
 
 export const COMPANY_INFO: CompanyInfo = {
   name: "DOLCE VITA",

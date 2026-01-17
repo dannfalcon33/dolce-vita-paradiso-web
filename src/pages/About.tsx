@@ -3,9 +3,9 @@ import PageWrapper from "../components/animated/PageWrapper";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ABOUT_CONTENT } from "../constants";
-import interiorAbout from "../assets/images/interior_about_1765550308063.png";
-import heroAbout from "../assets/images/hero_about_new.png";
-import chefRossi from "../assets/images/chef-rossi-about.png";
+import interiorAbout from "../assets/images/interior_about_1765550308063.webp";
+import heroAbout from "../assets/images/hero_about_new.webp";
+import chefRossi from "../assets/images/chef-rossi-about.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
