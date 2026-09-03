@@ -5,8 +5,16 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import LoadingScreen from "./components/ui/LoadingScreen";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [pathname]);
+  return null;
+}
 
 function App() {
   const location = useLocation();
@@ -20,6 +28,7 @@ function App() {
 
       {!isLoading && (
         <AnimatePresence mode="wait">
+          <ScrollToTop />
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<MainLayout />}>
               <Route index element={<Home />} />
